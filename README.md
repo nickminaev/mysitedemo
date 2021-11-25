@@ -22,7 +22,11 @@ In this step of the project, Jykell serves as a server which serves the content 
 # The Steps
 
 - Choosing the base image version for the application based on the official documentation provided by Jykell.
+<<<<<<< HEAD
 Jykell depends on Ruby (version 2.5.0 or higher). I chose an Alpine-based image, since these are one of the most lightweight images available.
+=======
+Jykell depends on Ruby (version 2.5.0 or higher). I chose an Alpine-based image, since these are one of the most lightweight image available.
+>>>>>>> 8ff9e1a6341d20b8710f770da674f5302b29d4e5
 The base image is based on an absolute version of Ruby and Alpine. By choosing the latest (the default) version of Alpine I could risk in introducing breaking changes into the dependent tools.
 - Installing the OS-level dependencies. Jykell depends on such tools as `make`, `gcc`, `musl-dev` and etc.
 - Creating a basic scaffolding for the project: `jekyll new myblog --blank`
@@ -32,6 +36,10 @@ The base image is based on an absolute version of Ruby and Alpine. By choosing t
 - `ENTRYPOINT` (the shell form) makes Jykell PID 0 for the container, so it's capable of receiving SIGTERM signals when the container is running. The sole purpose of the container at this stage is to run Jykell.
 - The `CMD` options specify additional options for the `bundle` command, namely for Jykell to build and run the site.
 
+<<<<<<< HEAD
 ### Some Useful Resources about `ENTRYPOINT` and `CMD` in Docker:
+=======
+# Some Useful Resources about `ENTRYPOINT` and `CMD` in Docker:
+>>>>>>> 8ff9e1a6341d20b8710f770da674f5302b29d4e5
 
 [Docker's official documentation](https://docs.docker.com/engine/reference/builder/#entrypoint)
