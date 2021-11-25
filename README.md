@@ -39,6 +39,8 @@ The base image is based on an absolute version of Ruby and Alpine. By choosing t
 # To Build and Run the Demo
 
 ```bash
+mkdir myblog
+cd myblog
 docker build -t mysite .
 ```
 To run the demo:
