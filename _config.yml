@@ -54,4 +54,6 @@ exclude:
  - vendor/gems/
  - vendor/ruby/
  - Dockerfile
+ - README.md
+ - tests/
 

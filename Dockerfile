@@ -8,7 +8,7 @@ WORKDIR /myblog
 COPY Gemfile ./
 RUN bundle install
 RUN rm -f index.md
-RUN rm -rf assets _data _layouts _includes
+RUN rm -rf assets _data _layouts _includes _ssas
 COPY _config.yml 404.html about.markdown index.markdown ./
 COPY _posts/ ./_posts/
 ENTRYPOINT ["bundle"]
