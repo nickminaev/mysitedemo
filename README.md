@@ -32,6 +32,16 @@ The base image is based on an absolute version of Ruby and Alpine. By choosing t
 - `ENTRYPOINT` (the shell form) makes Jykell PID 0 for the container, so it's capable of receiving SIGTERM signals when the container is running. The sole purpose of the container at this stage is to run Jykell.
 - The `CMD` options specify additional options for the `bundle` command, namely for Jykell to build and run the site.
 
-# Some Useful Resources about `ENTRYPOINT` and `CMD` in Docker:
+#### Some Useful Resources about `ENTRYPOINT` and `CMD` in Docker:
 
 [Docker's official documentation](https://docs.docker.com/engine/reference/builder/#entrypoint)
+
+# To Build and Run the Demo
+
+```bash
+docker build -t mysite .
+```
+To run the demo:
+```bash
+docker run --name site -v $PWD:/myblog -p 4000:4000 -d mysite
+```
