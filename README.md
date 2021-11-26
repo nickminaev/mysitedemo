@@ -7,6 +7,11 @@ The purpose of the project is to show a basic CI/CD process, including the follo
 1. Testing (to be continued)
 1. Deploying (to be continued)
 
+# Prerequisites
+
+The following installed:
+1. Git
+1. Docker
 # The Applicaiton
 
 My personal blog.
@@ -39,8 +44,8 @@ The base image is based on an absolute version of Ruby and Alpine. By choosing t
 # To Build and Run the Demo
 
 ```bash
-mkdir myblog
-cd myblog
+git clone https://github.com/nickminaev/mysitedemo.git
+cd mysitedemo
 docker build -t mysite .
 ```
 To run the demo:
