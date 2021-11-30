@@ -56,4 +56,7 @@ exclude:
  - Dockerfile
  - README.md
  - tests/
+ - nginx.conf
+ - docker-compose.yml
+ 
 

@@ -24,4 +24,5 @@ During the process I'm using [Jekyll](https://jekyllrb.com/) to compile the file
 
 In this step of the project, Jykell serves as a server which serves the content of the site locally.
 
-Refer each branch separately for different steps used to build and run the project.
+## The Steps
+The description can be found [here](https://www.nickminaev.com/posts/my-site-project-post2.html)

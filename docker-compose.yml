@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    site:
+        image: nginx:1.21.4-alpine
+        volumes:
+          - $PWD/_site:/usr/share/nginx/html
+          - ./nginx.conf:/etc/nginx/nginx.conf:ro
+        ports:
+          - 80:80
+        container_name: site
