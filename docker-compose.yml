@@ -9,3 +9,16 @@ services:
         ports:
           - 80:80
         container_name: site
+    
+    sitebuilder:
+        image: sitebuilder
+        volumes:
+            - $PWD:/site
+        container_name: sitebuilder
+        entrypoint: ["jekyll", "build"]
+
+    deployment:
+        image: sitedeployment
+        volumes:
+            - $PWD/_site:/site
+            - ~/.aws/credentials:/deploy/credentials:ro

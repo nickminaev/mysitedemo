@@ -58,5 +58,6 @@ exclude:
  - tests/
  - nginx.conf
  - docker-compose.yml
+ - cicd/
  
 

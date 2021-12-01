@@ -17,12 +17,9 @@ The following installed:
 My personal blog.
 During the process I'm using [Jekyll](https://jekyllrb.com/) to compile the files written in Markdown into a fully functioning small site.
 
-| Stage | Corresponding branch |
-|---|---|
-| My site as a standalone Docker container | `standalone-site`| 
-| Smaller version of the image, serving the contents with an NGINX container | `small-site-image` |
+| Stage | Corresponding branch | Link to the post |
+|---|---|---|
+| My site as a standalone Docker container | `standalone-site`| [post](https://www.nickminaev.com/posts/my-site-project-post1.html)
+| Smaller version of the image, serving the contents with an NGINX container | `small-site-image` | [post](https://www.nickminaev.com/posts/my-site-project-post2.html) |
+| Automate the site build & deployment | `automate-site-deployment` | [post](https://www.nickminaev.com/posts/my-site-project-post3.html) |
 
-In this step of the project, Jykell serves as a server which serves the content of the site locally.
-
-## The Steps
-The description can be found [here](https://www.nickminaev.com/posts/my-site-project-post2.html)
