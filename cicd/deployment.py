@@ -25,7 +25,6 @@ class BucketManager:
         self._bucket_name = bucket_name
 
     def upload_files(self, object_path):
-        #https://stackoverflow.com/questions/34550816/aws-content-type-settings-in-s3-using-boto3
         # If the object is taken from the parent directory, then the key is the file name
         bucket_key = object_path.name
         # If the object originates from one of the subdirectories, its key would be the relative path
