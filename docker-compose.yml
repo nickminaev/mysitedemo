@@ -9,6 +9,8 @@ services:
         ports:
           - 80:80
         container_name: site
+        networks:
+            - internal
     
     sitebuilder:
         image: sitebuilder
@@ -22,3 +24,15 @@ services:
         volumes:
             - $PWD/_site:/site
             - ~/.aws/credentials:/deploy/credentials:ro
+        networks:
+            - internal
+        depends_on: 
+            - site
+        environment:
+            - S3_BUCKET_NAME=${S3_BUCKET_NAME}
+            - SITE_BASE_URL=${BASE_URL}
+            - SERVER_HEADER=${SERVER_HEADER}
+            - EXPECTED_HEADER_VALUE=${EXPECTED_SERVER}
+
+networks:
+    internal:
