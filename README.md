@@ -22,4 +22,5 @@ During the process I'm using [Jekyll](https://jekyllrb.com/) to compile the file
 | My site as a standalone Docker container | `standalone-site`| [post](https://www.nickminaev.com/posts/my-site-project-post1.html)
 | Smaller version of the image, serving the contents with an NGINX container | `small-site-image` | [post](https://www.nickminaev.com/posts/my-site-project-post2.html) |
 | Automate the site build & deployment | `automate-site-deployment` | [post](https://www.nickminaev.com/posts/my-site-project-post3.html) |
+| Automate the tests and deployment | `automate-tests` | [post](https://www.nickminaev.com/posts/my-site-project-post4.html)
 
