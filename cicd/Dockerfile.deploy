@@ -1,11 +1,10 @@
 FROM python:3.9.9-alpine3.14
-ENV S3_BUCKET_NAME=www.yourdomain.com
 ENV SITE_CONTENTS_PATH=/site
 ENV AWS_SHARED_CREDENTIALS_FILE=/deploy/credentials
 RUN apk update && apk upgrade
 WORKDIR /deploy
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
-COPY deployment.py ./
-RUN chmod 755 deployment.py
-ENTRYPOINT ["./deployment.py"]
+COPY deployment.py tests.py docker-entrypoint.sh ./
+RUN chmod 755 *.py *.sh
+ENTRYPOINT ["./docker-entrypoint.sh"]
